@@ -16,7 +16,7 @@ window.onload = function() {
     item.classList.add('done');
   }
 
-  //some small change
+
 
   //creat a new element
   var newItem = document.createElement('li'); //creates a list item
@@ -24,4 +24,14 @@ window.onload = function() {
   newItem.classList.add("todoItem", "current");
   //add it to the document
   document.querySelector(".todoList").append(newItem);
+
+  //create many more
+  var newThings = ["eat", "skip", "be merry", "new things"];
+
+  for(var t of newThings){
+    var newItem = document.createElement('li')
+    newItem.innerHTML = t;
+    newItem.classList.add("todoItem");
+    document.querySelector(".todoList").append(newItem);
+  }
 }
