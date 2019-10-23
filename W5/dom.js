@@ -11,10 +11,12 @@ window.onload = function() {
   //select all the list items
   var list = document.querySelectorAll('li'); //select all li s, this is an array
   //loop through that List
-  for(var item of list){ // for of is for arrays, 
+  for(var item of list){ // for of is for arrays,
     //mark all as done.
     item.classList.add('done');
   }
+
+  //some small change
 
   //creat a new element
   var newItem = document.createElement('li'); //creates a list item
